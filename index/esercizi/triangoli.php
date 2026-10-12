@@ -25,11 +25,11 @@
                 }
                 echo "<br>";
                 echo "c.<br>";
-                for($i = 1; $i <= 10; $i++){
+                for($i = 0; $i < 10; $i++){
                     $count = $i;
                     for($o = 1; $o <= 10; $o++){
                         if($count > 0){
-                            echo '&nbsp;';
+                            echo '&nbsp;&nbsp;';
                         }else{
                           echo "*";  
                         }
@@ -43,7 +43,7 @@
                     $count = $i;
                     for($o = 1; $o <= 10; $o++){
                         if($count > 0){
-                            echo '&nbsp;';
+                            echo '&nbsp;&nbsp;';
                         }else{
                           echo "*";  
                         }
