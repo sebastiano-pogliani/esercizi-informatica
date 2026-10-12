@@ -8,10 +8,11 @@
            <?php 
                 echo '<table border="1">';
             
-                for($a = 0; $a < 10; $a++){
+                for($a = 1; $a <= 10; $a++){
                     echo '<tr>';
-                    for($b = 0; $b < 10; $b++){
-                        echo "<td>$a*$b</td>";
+                    for($b = 1; $b <= 10; $b++){
+                        $c = $a*$b;
+                        echo "<td>$c</td>";
                     }
                     echo '</tr>';
                 }
