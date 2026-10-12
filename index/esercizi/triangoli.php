@@ -4,66 +4,52 @@
         <title>Tabella Pitagorica</title>
     </head>
     <body>
-        <h1>Generazione di una tabella Pitagorica</h1>
+        <h1>Generazione di quattro triangoli di asterischi</h1>
            <?php 
-                echo "a.";
-                for($i = 1; $i < 10; $i++){
-                    $str = "";
-                    for($o = 1; $o < 10; $o++){
-                        $count = $i;
-                        if($count > 1){
-                            $str += "*";
-                            $count -= 1;
-                        }else{
-                            $str += " ";
-                        }
+                echo "a.<br>";
+                for($i = 1; $i <= 10; $i++){
+                    $count = $i;
+                    for($o = 0; $o < $count; $o++){
+                        echo "*";
                     }
-                    echo $str;
+                    echo "<br>";
                 }
-
-                echo "b.";
-                for($i = 10; $i > 0; $i--){
-                    $str = "";
-                    for($o = 1; $o < 10; $o++){
-                        $count = $i;
-                        if($count > 1){
-                            $str += "*";
-                            $count -= 1;
-                        }else{
-                            $str += " ";
-                        }
+                echo "<br>";
+                echo "b.<br>";
+                for($i = 10; $i >= 0; $i--){
+                    $count = $i;
+                    for($o = 0; $o < $count; $o++){
+                        echo "*";
                     }
-                    echo $str;
+                    echo "<br>";
                 }
-                
-                echo "c.";
-                for($i = 1; $i < 10; $i++){
-                    $str = "";
-                    for($o = 1; $o < 10; $o++){
-                        $count = $i;
-                        if($count > 1){
-                            $str += " ";
-                            $count -= 1;
+                echo "<br>";
+                echo "c.<br>";
+                for($i = 1; $i <= 10; $i++){
+                    $count = $i;
+                    for($o = 1; $o <= 10; $o++){
+                        if($count > 0){
+                            echo '&nbsp;';
                         }else{
-                            $str += "*";
+                          echo "*";  
                         }
+                        $count -= 1;
                     }
-                    echo $str;
+                    echo "<br>";
                 }
-
-                echo "d.";
-                for($i = 10; $i > 0; $i--){
-                    $str = "";
-                    for($o = 1; $o < 10; $o++){
-                        $count = $i;
-                        if($count > 1){
-                            $str += " ";
-                            $count -= 1;
+                echo "<br>";
+                echo "d.<br>";
+                for($i = 10; $i >= 0; $i--){
+                    $count = $i;
+                    for($o = 1; $o <= 10; $o++){
+                        if($count > 0){
+                            echo '&nbsp;';
                         }else{
-                            $str += "*";
+                          echo "*";  
                         }
+                        $count -= 1;
                     }
-                    echo $str;
+                    echo "<br>";
                 }
             ?> 
 
