@@ -5,8 +5,6 @@
     </head>
     <body>
         <h1>Generazione di una tabella Pitagorica</h1>
-
-        <p>
            <?php 
                 echo '<table border="1">';
             
@@ -20,7 +18,6 @@
             
                 echo '</table>';
             ?> 
-        </p>
 
     </body>
 </html>
