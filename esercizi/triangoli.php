@@ -8,18 +8,20 @@
            <?php 
                 echo "a.<br>";
                 for($i = 1; $i <= 10; $i++){
-                    $count = $i;
-                    for($o = 0; $o < $count; $o++){
+                    for($o = 0; $o < $i; $o++){
                         echo "*";
+                        //scrive un asterisco nella riga
+                        //aggiunge un asterisco ogni volta che il ciclo va a capo dieci volte
                     }
                     echo "<br>";
                 }
                 echo "<br>";
                 echo "b.<br>";
                 for($i = 10; $i >= 0; $i--){
-                    $count = $i;
-                    for($o = 0; $o < $count; $o++){
+                    for($o = 0; $o < $i; $o++){
                         echo "*";
+                        //scrive un asterisco nella riga
+                        //rimuove un asterisco ogni volta che il ciclo va a capo dieci volte
                     }
                     echo "<br>";
                 }
@@ -30,8 +32,10 @@
                     for($o = 1; $o <= 10; $o++){
                         if($count > 0){
                             echo '&nbsp;&nbsp;';
+                            //scrive uno spazio nella riga
                         }else{
-                          echo "*";  
+                          echo "*";
+                            //aggiunge un asterisco ogni volta che la variabile "count" finisce
                         }
                         $count -= 1;
                     }
@@ -44,9 +48,10 @@
                     for($o = 1; $o <= 10; $o++){
                         if($count > 0){
                             echo '&nbsp;&nbsp;';
+                            //scrive uno spazio nella riga
                         }else{
-                          echo "*";  
-                        }
+                          echo "*";
+                            //aggiunge un asterisco ogni volta che la variabile "count" finisce
                         $count -= 1;
                     }
                     echo "<br>";
